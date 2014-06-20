@@ -80,8 +80,8 @@ end
 
 class Sandbox
 
-	def initialize
-	  @rc = RedCrawl.new('http://oneminutecode.com')
+	def initialize(url)
+	  @rc = RedCrawl.new(url)
       @rc.crawl
       @links  = []
       @writer = Write::Writer.new
@@ -102,6 +102,6 @@ class Sandbox
     end
 end
 
-a = Sandbox.new
+a = Sandbox.new('http://oneminutecode.com')
 
 
