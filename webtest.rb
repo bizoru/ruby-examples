@@ -102,6 +102,9 @@ class Sandbox
     end
 end
 
-a = Sandbox.new('http://oneminutecode.com')
+puts "Opening: #{ARGV[0]}"
+exit if ARGV.size < 1 
+a = Sandbox.new(ARGV[0])
+
 
 
