@@ -9,7 +9,7 @@ require 'open-uri'
 require_relative 'write'
 require 'colored'
 
-puts "Starting a new Google...".bold.blue
+puts "Starting to Crawl websites".bold.blue
 
 class RedCrawl
    attr_accessor :links,:urls
@@ -23,18 +23,23 @@ end
 
 def process(body)
 	
+  # Find the first href text
 	start_position = body.index("href")
 	if start_position.nil?
 		return ['','']
 	end
+
 	body = body[start_position+1,body.size]
+   
+	quote_1 = body.index("\"")
+  if quote_1.nil?
+    return ['','']
+  end
 
-	colon_1 = body.index("\"")
+	body = body[quote_1+1,body.size]
 
-	body = body[colon_1+1,body.size]
-
-	colon_2 = body.index("\"",colon_1+1)
-	link_preview = body[0,colon_2]
+	quote_2 = body.index("\"",quote_1+1)
+	link_preview = body[0,quote_2]
 
 
 	if link_preview[link_preview.size-1] == "/"
