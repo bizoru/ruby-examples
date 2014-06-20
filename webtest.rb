@@ -18,7 +18,9 @@ def initialize(url)
 	@links = []
 	
 end
-	
+
+# Should add smart link processing
+
 def process(body)
 	
 	start_position = body.index("href")
@@ -28,10 +30,13 @@ def process(body)
 	body = body[start_position+1,body.size]
 
 	colon_1 = body.index("\"")
+
 	body = body[colon_1+1,body.size]
 
 	colon_2 = body.index("\"",colon_1+1)
 	link_preview = body[0,colon_2]
+
+
 	if link_preview[link_preview.size-1] == "/"
 		link_preview = link_preview[0,link_preview.size-1]
     end
