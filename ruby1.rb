@@ -1,4 +1,4 @@
-foobar = 'steven'
+foobar = 'user'
 
 # Eval a variable content
 puts "#{foobar} how are you?"
@@ -22,7 +22,7 @@ g.flatten
 puts g.inspect
 
 # Hash or Map
-mymap = {:name => "Steven", :age => 25}
+mymap = {:name => "User", :age => 25}
 puts mymap.inspect
 puts mymap[:name]
 
@@ -88,8 +88,8 @@ puts "---------------------------"
 (1..10).each{ |x| puts x if x==2..x==8}
 
 
-name = "Steven Sierra Forero"
-print name == "Steven Sierra Forero" ? 'Allowed': 'Not allowed'
+name = "User"
+print name == "User" ? 'Allowed': 'Not allowed'
 
 # Fa
 puts "finish"
