@@ -1,8 +1,12 @@
-rubyrest
+Ruby Examples
 ========
-Ruby Test Restful Services
 
-This is a set of examples using Ruby capabilities
+Following files are a set of ruby examples to show ruby language capabilities.
 
-Please have a look at rest_book.rb, this is a script to consume HTTP webservices using HttpParty ruby gem.
+---
+
+Files containing examples are described here:
+
+ 1. rest_books.rb A Ruby Test using Restful Services.
+    This is a script to consume HTTP webservices using HttpParty ruby gem.
 
