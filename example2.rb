@@ -1,4 +1,4 @@
-test_array = {:name => 'Steven', :age => 25}
+test_array = {:name => 'User', :age => 25}
 puts test_array.any?
 puts test_array.count
 puts test_array.length

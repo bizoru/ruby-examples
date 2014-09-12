@@ -7,7 +7,7 @@ puts "#{foobar} how are you?"
 puts foobar[1..2]
 
 # Again each
-(1..2).to_a.each do |x| puts x.to_s+" times" end 
+#(1..2).to_a.each do |x| puts x.to_s+" times" end 
 
 # Shift to remove first item
 g = (1..10).to_a
@@ -25,6 +25,11 @@ puts g.inspect
 mymap = {:name => "User", :age => 25}
 puts mymap.inspect
 puts mymap[:name]
+
+mymap.each do |index,key|
+	puts "#{index} = #{key}"
+end
+
 
 # Range
 birth_year = 1988

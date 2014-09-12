@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-module Ruby6
+module Example6
   class Intelligence
   	 attr_accessor :container
      def sayHello

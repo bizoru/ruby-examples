@@ -1,5 +1,0 @@
-require 'rubygems'
-require 'nokogiri'
-require 'open-uri'
-
-url = 'http://opensai.org'

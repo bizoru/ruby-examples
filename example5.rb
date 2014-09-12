@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 
-require_relative 'ruby6'
+require_relative 'example6'
 
-class Robot < Ruby6::Intelligence
+class Robot < Example6::Intelligence
    attr_accessor :name, :type, :t
 
    def initialize
